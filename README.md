@@ -17,4 +17,4 @@ When I first thought of this project, it was mainly as a joke. But I talked abou
 ## What I learned
 I learned a lot about operator overriding and building interconnected classes.
 ## What's next for Sequence Form Converter
-This was really just a fun experiment in my capabilities both as a programmer and a mathematician. Though the idea of converting recursive sequences into closed forms is useful generally because it reduces algorithmic complexity when finding terms, simple sequences like the ones I evaluated with this program can be run relatively quickly in their recursive forms.
+This was really just a fun experiment in my capabilities both as a programmer and a mathematician. Though the idea of converting recursive sequences into closed forms is useful generally because it reduces algorithmic complexity when finding terms, simple sequences like the ones I evaluated with this program can be run relatively quickly in their recursive forms. This program can be useful though for teaching about the differences between recursive and closed forms, as well as how to discover the closed form through constructive induction, since that is the method it employs.
