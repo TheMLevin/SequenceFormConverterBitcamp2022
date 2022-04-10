@@ -41,7 +41,7 @@ def get_coefs() -> List[float]:
 
 
 def get_initials(terms: int) -> List[float]:
-    print("Enter the starting values (The number of starting values is determined by the number of coefficients)")
+    print("Enter the starting values (The number of starting values is equal to the number of coefficients):")
     try:
         return [float(input(f"a_{i} = ")) for i in range(terms)]
     except ValueError:
@@ -77,7 +77,7 @@ def define_seq() -> Tuple[List, List, int]:
 
 
 def main():
-    print("Define a recursive sequence:")
+    print("All elements and outputs of closed forms are truncated to 5 decimal places\n\nDefine a recursive sequence:")
     time.sleep(.5)
     while True:
         recur = define_seq()

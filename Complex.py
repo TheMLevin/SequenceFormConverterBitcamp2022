@@ -13,7 +13,7 @@ class Complex(object):
         return Complex(self.a + other, self.b)
 
     def __sub__(self, other) -> 'Complex':
-        return Complex(self.a - other.a, self.b - other.b) if isinstance(other, Complex) else other - self
+        return Complex(self.a - other.a, self.b - other.b) if isinstance(other, Complex) else self.__rsub__(other)
 
     def __rsub__(self, other):
         return Complex(self.a - other, self.b)
@@ -58,7 +58,7 @@ class Complex(object):
             return prod
 
     def __str__(self) -> str:
-        short = self.truncate(15)
+        short = self.truncate(5)
         return f"{short.a if short.a or not short.b else ''}{(' + ' if short.b > 0 else ' - ') if short.a and short.b else ''}{f'{abs(short.b)}i' if short.b else ''}"
 
     def __abs__(self) -> float:
